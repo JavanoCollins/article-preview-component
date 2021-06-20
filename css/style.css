@@ -2,18 +2,19 @@
     padding: 0;
     margin: 0;
     font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     background-color: hsl(210, 46%, 95%);
-    height: 100vh;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
 }
 
 main {
-    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
@@ -23,6 +24,8 @@ main {
     height: 420px;
     background-color: #fff;
     border-radius: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 /* COL 1 */
@@ -102,7 +105,7 @@ main {
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    transition: all ease .1s;
+    transition: all ease 0.1s;
     /* position: absolute;
     top: 710px;
     left: 73%; */
@@ -140,5 +143,5 @@ main {
 
 .toggle-opacity {
     opacity: 1;
-    transition: all ease .1s;
+    transition: all ease 0.1s;
 }
