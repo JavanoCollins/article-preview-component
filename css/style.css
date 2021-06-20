@@ -98,11 +98,11 @@ main {
 .share-icons {
     background-color: hsl(217, 19%, 35%);
     padding: 1rem 1.5rem;
-    width: 150px;
+    width: 200px;
     opacity: 0;
     display: flex;
     margin-right: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     transition: all ease 0.1s;
