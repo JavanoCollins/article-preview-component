@@ -8,14 +8,17 @@ body {
     background-color: hsl(210, 46%, 95%);
     height: 100vh;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    /* padding: 0 1rem; */
+}
+
+main {
+    padding: 0 2rem;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 400px 600px;
+    grid-template-columns: 400px 700px;
     width: 1100px;
     height: 420px;
     background-color: #fff;
@@ -105,9 +108,9 @@ body {
     left: 73%; */
 }
 
-/* .mobile-share-icons {
+.mobile-share-icons {
     display: none;
-} */
+}
 
 .share-icons p {
     color: hsl(214, 17%, 51%);
@@ -135,7 +138,7 @@ body {
     display: none;
 }
 
-.show {
+.toggle-opacity {
     opacity: 1;
     transition: all ease .1s;
 }

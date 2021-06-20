@@ -7,15 +7,19 @@ const mobileShareIcon = document.querySelector("#mobile-share-icon");
 const icons = ["facebook", "pinterest", "twitter"];
 
 const toggleOpacity = (e) => {
-    e.classList.toggle("show");
+    e.classList.toggle("toggle-opacity");
 };
+
+const toggleDispay = (e) => {
+    e.classList.toggle("toggle-display")
+}
 
 for (let i = 0; i < icons.length; i++) {
     shareIconsDiv.innerHTML += `<img class='icon' src="./images/icon-${icons[i]}.svg"/>`;
 }
 
 for (let i = 0; i < icons.length; i++) {
-    mobileShareIconsDiv.innerHTML += `<img class='icon' src="./images/icon-${icons[i]}.svg"/>`;
+    mobileShareIconsDiv.innerHTML += `<img class='icon mobile-icon' src="./images/icon-${icons[i]}.svg"/>`;
 }
 
 shareIcon.addEventListener("click", (e) => {
@@ -23,5 +27,5 @@ shareIcon.addEventListener("click", (e) => {
 });
 
 mobileShareIcon.addEventListener("click", (e) => {
-    return toggleShow(mobileShareIconsDiv);
+    return toggleDispay(mobileShareIconsDiv);
 });
