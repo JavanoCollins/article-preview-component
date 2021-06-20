@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 1rem; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    width: 1100px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+/* COL 1 */
+.col-1 {
+    height: 420px;
+}
+
+.col-1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+/* COL 2 */
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+}
+
+#heading {
+    color: hsl(217, 19%, 35%);
+    font-size: 26px;
+}
+
+#description {
+    color: hsl(214, 17%, 51%);
+    font-size: 15px;
+    line-height: 24px;
+}
+
+#avatar-img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-details {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.user-info {
+    margin-left: 18px;
+}
+
+#user-name {
+    color: hsl(217, 19%, 35%);
+}
+
+#user-time {
+    color: hsl(212, 23%, 69%);
+}
+
+.share-icons-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* overflow: visible; */
+}
+
+.share-icons {
+    background-color: hsl(217, 19%, 35%);
+    padding: 1rem 1.5rem;
+    width: 150px;
+    opacity: 0;
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    transition: all ease .1s;
+    /* position: absolute;
+    top: 710px;
+    left: 73%; */
+}
+
+/* .mobile-share-icons {
+    display: none;
+} */
+
+.share-icons p {
+    color: hsl(214, 17%, 51%);
+    text-transform: uppercase;
+}
+
+.icons {
+    display: flex;
+}
+
+.icon {
+    width: 20px;
+    cursor: pointer;
+    color: #000;
+    margin: 0 0.5rem;
+}
+
+#share-icon {
+    /* margin-bottom: 70px; */
+    /* position:absolute; */
+    width: 30px;
+}
+
+#mobile-share-icon {
+    display: none;
+}
+
+.show {
+    opacity: 1;
+    transition: all ease .1s;
+}
